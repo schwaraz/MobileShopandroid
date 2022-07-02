@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/wel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-20dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/wel"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mail"
+        android:backgroundTint="@color/black"
+        android:padding="10dp"
+        android:text="Log Out"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/belanja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
+        android:backgroundTint="@color/black"
+        android:text="Belanja Online"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/transaksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/black"
+        android:text="lihat transaksi yang berlangsung"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/belanja"
+        app:layout_constraintTop_toBottomOf="@+id/mail"
+        tools:layout_editor_absoluteX="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
